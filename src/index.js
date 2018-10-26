@@ -7,10 +7,10 @@ const initModel = 0;
 
 function view(dispatch, model){
 	return div([
-div({className: 'col-md-5'}, `Count: ${model}`),
-button({className: 'btn btn-primary mr-2', 
+div({className: 'mv2'}, `Count: ${model}`),
+button({className: 'pv1 ph2 mr2', 
 onclick: ()=> dispatch(MSGS.ADD) },'+'),
-button({className: 'btn btn-secondary', 
+button({className: 'pv1 ph2', 
 onclick: ()=> dispatch(MSGS.SUBTRACT) },'-'),
 		]);
 }
